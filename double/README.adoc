@@ -1,3 +1,19 @@
+= How to run =
+
+# Install Redis, Windows MSI Installer: https://github.com/MSOpenTech/redis/releases
+# Run all services with `mvn spring-boot:run`
+## Gateway Service
+## UI Service
+## Admin Service
+## Resource Service
+# Open the Gateway http://localhost:8080
+# Login with "admin" / "admin" or "user" / "password" or "audit" / "audit"
+
+= Changes to the original =
+* Smaller CSS fixes
+* Include the UI and Admin UI services in iFrames
+
+
 [[_multiple_ui_applications_and_a_gateway_single_page_application_with_spring_and_angular_js_part_vi]]
 = Multiple UI Applications and a Gateway
 

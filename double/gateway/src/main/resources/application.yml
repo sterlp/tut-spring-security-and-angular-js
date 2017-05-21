@@ -11,6 +11,9 @@ zuul:
     ui:
       url: http://localhost:8081
       sensitive-headers:
+    ui-dev:
+      url: http://localhost:8081
+      sensitive-headers:
     admin:
       url: http://localhost:8082
       sensitive-headers:

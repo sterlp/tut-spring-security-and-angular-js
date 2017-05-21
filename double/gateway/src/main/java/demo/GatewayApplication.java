@@ -71,6 +71,8 @@ public class GatewayApplication {
 					.antMatchers("/index.html", "/login", "/").permitAll()
 					.anyRequest().authenticated()
 					.and()
+				.headers().frameOptions().sameOrigin()
+					.and()
 				.csrf()
 					.csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse());
 			// @formatter:on

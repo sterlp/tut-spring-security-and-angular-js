@@ -7,6 +7,7 @@ angular.module('gateway', []).config(function($httpProvider) {
 function($http) {
 
 	var self = this;
+	self.iframe = 'home';
 
 	var authenticate = function(credentials, callback) {
 
@@ -46,6 +47,12 @@ function($http) {
 			self.error = !authenticated;
 		})
 	};
+	
+	self.iFrameUrl  = function(location) {
+		if (location === 'admin') return "/admin/";
+		if (location === 'user') return "/ui/";
+		return "";
+	}
 
 	self.logout = function() {
 		$http.post('logout', {}).finally(function() {
