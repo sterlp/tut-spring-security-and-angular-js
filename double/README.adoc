@@ -1,4 +1,4 @@
-= How to run =
+= How to run
 
 # Install Redis, Windows MSI Installer: https://github.com/MSOpenTech/redis/releases
 # Run all services with `mvn spring-boot:run`
@@ -9,7 +9,8 @@
 # Open the Gateway http://localhost:8080
 # Login with "admin" / "admin" or "user" / "password" or "audit" / "audit"
 
-= Changes to the original =
+= Changes to the original
+
 * Smaller CSS fixes
 * Include the UI and Admin UI services in iFrames
 
