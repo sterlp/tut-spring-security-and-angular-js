@@ -8,6 +8,7 @@ function($http) {
 
 	var self = this;
 	self.iframe = 'home';
+	self.showNavbar = false;
 
 	var authenticate = function(credentials, callback) {
 
